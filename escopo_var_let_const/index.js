@@ -3,10 +3,6 @@ const ImageMessage = require('./image-message.model');
 const fs = require('fs');
 const path = require('path');
 
-const emptyMessage = new Message();
-const emptyImageMessage = new ImageMessage();
-
-
 class MessageService {
   constructor () {
     let resolvePromisse;
@@ -37,5 +33,5 @@ const messagesService = new MessageService();
 messagesService.messages.then(() => {
 
 }).catch(() => {
-
+ //
 });
